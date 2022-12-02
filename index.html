@@ -9,14 +9,17 @@
     <link rel="stylesheet" href="style.css">
     <!-- Boxicons CDN link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Grid.js CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
 </head>
 
 <body>
     <div class="sidebar">
         <div class="logo_content">
             <div class="logo">
+                <img src="logo_Frugo.png" alt="">
                 <div class="logo_name">
-                    Frugo
+
                 </div>
             </div>
             <i class='bx bx-menu' id="btn"></i>
@@ -25,7 +28,6 @@
             <li>
                 <i class='bx bx-search'></i>
                 <input type="text" placeholder="Search">
-                <span class="tooltip">Search</span>
             </li>
             <li>
                 <a href="">
@@ -98,27 +100,43 @@
         </div>
     </div>
 
-<div class="home_content">
-    <div class="text">Home</div>
-</div>
+    <div class="home_content">
+        <div class="navbar">
+            <ul class="nav-links">
+                <li><a href="">Menu</a></li>
+                <li class="center"><a href="">Portafolio</a></li>
+                <li class="upward"><a href="">Servicios</a></li>
+                <li class="forward"><a href="">Feedback</a></li>
+            </ul>
+        </div>
+        <div class="text">Home</div>
+
+        <div id="wrapper"></div>
+
+    </div>
+
+    <!-- GRID.JS CDN -->
+
+    <script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
+    <script src="main.js"></script>
+
+    <script>
+
+        let btn = document.querySelector("#btn")
+        let sidebar = document.querySelector(".sidebar")
+        let searchBtn = document.querySelector(".bx-search")
+
+        btn.onclick = function () {
+            sidebar.classList.toggle("active")
+        }
+
+        searchBtn.onclick = function () {
+            sidebar.classList.toggle("active")
+        }
 
 
-<script>
-
-    let btn = document.querySelector("#btn")
-    let sidebar = document.querySelector(".sidebar")
-    let searchBtn = document.querySelector(".bx-search")
-
-    btn.onclick = function(){
-        sidebar.classList.toggle("active")
-    }
-
-    searchBtn.onclick = function(){
-        sidebar.classList.toggle("active")
-    }
+    </script>
     
-
-</script>
 
 </body>
 
