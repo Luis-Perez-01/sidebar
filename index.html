@@ -109,6 +109,9 @@
                 <li class="forward"><a href="">Feedback</a></li>
             </ul>
         </div>
+        <div class="theme-btn">
+            <i class='bx bxs-adjust' ></i>
+        </div>
         <div class="text">Home</div>
 
         <div id="wrapper"></div>
@@ -121,6 +124,12 @@
     <script src="main.js"></script>
 
     <script>
+        (function () {
+
+            document.querySelector(".theme-btn").addEventListener("click", () => {
+                document.body.classList.toggle("light-mode");
+            })
+        })();
 
         let btn = document.querySelector("#btn")
         let sidebar = document.querySelector(".sidebar")
@@ -136,7 +145,7 @@
 
 
     </script>
-    
+
 
 </body>
 
