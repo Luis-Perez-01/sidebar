@@ -274,7 +274,7 @@ body {
     margin: 12px;
 }
 
-.sidebar.active ~ .home_content{
+.sidebar.active~.home_content{
     width: calc(100%, -240px);
     left: 240px;
 }
@@ -286,6 +286,20 @@ body {
   justify-content: start;
   padding-left: 50px;
   background: #665A48;
+}
+
+.home-section .text {
+  display: inline-block;
+  color: #11101d;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 18px
+}
+
+@media (max-width: 420px) {
+  .sidebar li .tooltip {
+      display: none;
+  }
 }
 
 .nav-links{
